@@ -1,0 +1,60 @@
+# ---- macOS ----
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# ---- Python bytecode / build ----
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+.virtualenv/
+
+# ---- Tools & caches ----
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.hypothesis/
+.coverage
+.coverage.*
+.cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.pyre/
+tox.ini
+.nox/
+
+# ---- Editors/IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- Project outputs ----
+results/
+results/**
+
+# ---- Local configs / secrets (optional) ----
+.env
+.env.*
+*.local
+*.secret
+
+# ---- OS & misc ----
+Thumbs.db
+Desktop.ini
