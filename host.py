@@ -43,12 +43,12 @@ def choose_V(k: int) -> Tuple[List[int], List[int]]:
         raise ValueError("k must be between 1 and 16")
     deck = make_deck_values()
     # Ensure at least one 1 in V
-    V = [1]
+    V = [1, 5, 7, 3, 8] # pick fixed cards to ensure fairness accross the two games.
     deck.remove(1)
-    for _ in range(k - 1):
-        choice = random.choice(deck)
-        V.append(choice)
-        deck.remove(choice)
+    deck.remove(5)
+    deck.remove(7)
+    deck.remove(3)
+    deck.remove(8)
     S_pool = deck[:]
     random.shuffle(S_pool)
     return V, S_pool
